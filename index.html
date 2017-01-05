@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/index.css"></head><body><div class="layout"><div class="nav"><div class="logo"><img src="images/logo.png" alt=""></div><ul><li><a href="javascript:void(0);" id="openLianzai">连载动漫-get <span>></span></a></li><li><a href="javascript:void(0);" id="openList">专题列表-get <span>></span></a></li><li><a href="javascript:void(0);">关于 <span>></span></a></li></ul></div><div class="homePage"><div id="homePage_mask"></div><header class="hp_header"><a class="hp_header_l hl_icon" id="openNav"></a> <a class="hp_header_r hl_icon"></a><h1 class="hp_header_title">红旅动漫</h1></header><div class="hp_box"><main class="hp_main"><div class="hp_main_move"><div class="hp_banner"><ul class="clearFix"></ul><ol><li class="active"></li><li></li></ol></div><div class="hp_main_title"><ul><li><a href="javascript:void(0);" class="active" data-tab="#hp_content1">新增连载</a></li><li><a href="javascript:void(0);" data-tab="#hp_content2">新增完结</a></li><li><a href="javascript:void(0);" data-tab="#hp_content3">推荐连载</a></li><li><a href="javascript:void(0);" data-tab="#hp_content4">推荐完结</a></li></ul></div><div class="hp_main_content"><div class="hp_content active" id="hp_content1"><ul class="clearFix"></ul></div><div class="hp_content" id="hp_content2"><ul class="clearFix"></ul></div><div class="hp_content" id="hp_content3"><ul class="clearFix"></ul></div><div class="hp_content" id="hp_content4"><ul class="clearFix"></ul></div><span class="line"></span></div></div></main></div></div><div class="serialize"><div class="serialize_header"><a href="javascript:void(0)" class="serialize_header_l backHome">&lt</a><h2 class="serialize_header_title">连载动漫</h2></div><div class="serialize_content"><ul></ul></div></div><div class="topics"><div class="serialize_header"><a href="javascript:void(0)" class="serialize_header_l backHome">&lt</a><h2 class="serialize_header_title">专题列表</h2></div><div class="topics_content"><ul></ul></div></div></div></body><script type="text/javascript" src="js/jquery.min.js"></script><script type="text/javascript" src="js/template-native.js"></script><script type="text/javascript" src="js/index.js"></script><script type="text/javascript" src="js/swipe.js"></script><script type="text/javascript" src="js/common.js"></script><script type="text/template" id="lunbo"> <%for (var i = 0; i < items.length; i++) {%> <li>
+				<a href="javascipt:void(0);">
+					<img src="<%=items[i].img%>" alt="">
+					<p><%=items[i].title%></p>
+				</a>
+			</li> <%}%> </script><script type="text/template" id="tab"> <%for (var i = 0; i < items.length; i++) {%> <li>
+				<a href="javascipt:void(0);">
+					<img src="<%=items[i].img%>" alt="">
+					<p><%=items[i].update%></p>
+				</a>
+				<p><%=items[i].name%></p>
+			</li> <%}%> </script><script type="text/template" id="lianzai"> <%for (var i = 0; i < items.length; i++) {%> <li>
+				<a href="javascipt:void(0);">
+					<img src="<%=items[i].img%>" alt="">
+					<span class="serialize_text">
+						<p><%=items[i].name%></p>
+						<p><%=items[i].episode%></p>
+						<p><%=items[i].updateTime%></p>
+						<p>下载次数:<%=items[i].downloadCount%></p>
+					</span>
+				</a>
+			</li> <%}%> </script><script type="text/template" id="list"> <%for (var i = 0; i < items.length; i++) {%> <li>
+				<a href="javascipt:void(0);">
+					<img src="<%=items[i].img%>" alt="">
+				</a>
+				<p><%=items[i].title%></p>
+			</li> <%}%> </script></html>
